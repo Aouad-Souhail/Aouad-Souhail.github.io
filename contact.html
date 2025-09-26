@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - NoufAssur</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- En-tête -->
+<header>
+    <div class="container header-flex">
+        <img src="logo.png" alt="Logo NoufAssur" class="logo">
+    </div>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="index.html#about">À propos</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Section Contact -->
+<section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>📍 Adresse : 16 Rue Verdié - 427000 firminy </p>
+    <p>📞 Téléphone : 07 84 98 39 12 </p>
+    <p>✉️ Email : Contact@noufassur.fr</p>
+    <p>📸 Instagram : </p>
+    <form action="https://formspree.io/f/xxxxxxxx" method="POST" class="contact-form">
+        <label for="fullname">Nom & Prénom :</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Votre nom complet" required>
+
+        <label for="assurance">Type d’assurance :</label>
+        <select id="assurance" name="assurance" required>
+            <option value="">-- Sélectionnez --</option>
+            <option value="sante">Assurance Santé</option>
+            <option value="habitation">Assurance Habitation</option>
+            <option value="auto">Assurance Auto</option>
+            <option value="entreprise">Assurance Entreprise</option>
+            <option value="vie">Assurance Vie</option>
+            <option value="prevoyance">Prévoyance</option>
+        </select>
+
+        <label for="phone">Téléphone :</label>
+        <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78" required pattern="[0-9]{10}">
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="5" placeholder="Votre demande..." required></textarea>
+
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+
+<!-- Pied de page -->
+<footer>
+    <p>&copy; 2025 Courtier en Assurances - Tous droits réservés</p>
+</footer>
+</body>
+</html>
